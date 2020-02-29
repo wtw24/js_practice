@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+  default:
+    external:
+      name: backend
+
+services:
+  node:
+    image: node:8.6-alpine
+    volumes:
+      - ./:/var/www:cached
+    working_dir: /var/www
+    tty: true

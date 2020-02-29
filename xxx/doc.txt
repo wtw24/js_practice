@@ -1,0 +1,4 @@
+
+
+docker-compose exec node npm i
+git remote add origin git@github.com:wtw24/js_practice.git
